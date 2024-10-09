@@ -5,9 +5,26 @@ import jakarta.persistence.*;
 
 public class Book {
 
+    private String titulo;
+
+    public Book(String number, String georgeOrwell, int i, boolean b) {
+    }
+
+    public void forEach(Object object) {
+    }
+
+    public Integer getId() {
+        return 0;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+
     @Entity
     @Table(name = "libros")
-    public class Libro {
+    public static class Libro {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,6 +93,9 @@ public class Book {
             this.disponible = disponible;
         }
     }
+
+
+
 
 
 }
